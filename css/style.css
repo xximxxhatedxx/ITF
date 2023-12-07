@@ -1,0 +1,55 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+ 
+#container{
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+}
+ 
+button{
+    height: 45%;
+    width: 45%;
+    appearance: none;
+    border: 1px solid purple;
+    border-radius: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    box-shadow: 
+        0 0 20px 2px purple,
+        inset 0 0 20px 2px purple;
+    color: white;
+    font-size: 5vmin;
+    transition: 
+        font-size 0.5s, 
+        border 0.5s, 
+        box-shadow 0.5s;
+}
+ 
+button:hover{
+    font-size: 7.5vmin;
+    box-shadow: 
+        0 0 20px 2px #d300d3,
+        inset 0 0 20px 2px #d300d3;
+    border: 1px solid #d300d3;
+}
+ 
+@media screen and (max-width:600px) {
+    button{
+        height: 22.5%;
+        width: 90%;
+    }
+}
